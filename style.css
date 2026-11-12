@@ -1,0 +1,17 @@
+body {
+  margin: 0; /* Avstånd från andra obejkt */
+  font-family: sans-serif; /* Typsnitt */
+}
+
+/* The Pixi canvas sits behind the text */
+canvas {
+  position: fixed; /* Postionen är "fixed" */
+  top: 0; /* Avstånd från topp */
+  left: 0; /* Avstånd från vänstra sidan */
+  z-index: -1; /* Den är ett steg bakåt */
+}
+
+main {
+  max-width: 40rem; /* Max-bredden */
+  padding: 2rem; /* Marginal från innehåll till yttre kant */
+}
