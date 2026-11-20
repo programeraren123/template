@@ -1,6 +1,6 @@
 // Start Pixi and put its canvas on the page 
 const app = new PIXI.Application(); // startar Pixi
-await app.init({ resizeTo: window, background: "#ffffff" }); 
+await app.init({ resizeTo: window, background: "#f4f4f4" }); 
 document.body.appendChild(app.canvas); // skapar en canvas på sidan
 
 const dots = new PIXI.Graphics(); // hänvisar till prickarna 
@@ -22,5 +22,5 @@ app.ticker.add(() => { // prickarna växer där musen är
       dots.circle(x, y, Math.max(1, 8 - distance / 30));
     }
   }
-  dots.fill("#2b44d6"); // prickarna är blå
+  dots.fill("#eebebe"); // prickarna är blå
 });

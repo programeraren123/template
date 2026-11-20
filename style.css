@@ -1,6 +1,53 @@
 body {
-  margin: 0; /* Avstånd från andra obejkt */
-  font-family: sans-serif; /* Typsnitt */
+  margin: 48px; /* Avstånd från andra obejkt */
+  font-family: "Oxanium", sans-serif; /* typsnitt */
+  color: #221f22; /* textfärg */
+  background: #f4f4f4; /* bakgrund med en toning*/
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 72px;
+  margin: 0 0 12px; /* marginal */
+}
+
+#imagerows {
+  display: flex; /* flex-kontainer */
+}
+
+#largeimage img {
+  width: 616px; /* bredd */
+}
+
+#images img{
+  width: 300px;
+}
+
+img {
+  display: block; /* block */
+  object-fit: cover; /* täcker */
+  border-radius: 12px; /* böjd kant */
+  margin-right: 12px; /* avstånd till höger */
+  margin-bottom: 12px; /* avstånd till botten */
+}
+
+video {
+  display: block; 
+  width: 400px;
+  border-radius: 12px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+#ram {
+  position: absolute;
+  left: 16px; /* avstånd till vänster */
+  top: 16px; /* avstånd från toppen */
+  width: 96%; /* bredd */
+  height: 1046px; /* höjd */
+  border: 1px solid #a07f7f; /* En kant */
+  border-radius: 20px; /* Avrundade hörn */
+  pointer-events: none;
 }
 
 /* The Pixi canvas sits behind the text */
@@ -13,5 +60,7 @@ canvas {
 
 main {
   max-width: 40rem; /* Max-bredden */
-  padding: 2rem; /* Marginal från innehåll till yttre kant */
+  padding: 2rem; /* avstånd från kanten */
 }
+
+

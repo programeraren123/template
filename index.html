@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Axel Hedman</title> <!--Axel hedman som titel-->
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"><!--Länkar till css-->
 </head>
 <body>
@@ -14,7 +15,32 @@
     <h2>Om projektet</h2> <!--Rubrik 2-->
     <p>Signature Sound är en interaktiv installation där användaren ges möjlighet att på ett underhållande sätt skapa sin egen melodi genom sin identitet, 
     översatt till ljud. Hur låter just du? Rita, skriv och utforska ditt egna signaturljud.</p> <!--Text-->
+
+    <div id="imagerows">
+      <div id="largeimage">
+          <img id="images3" src="Images/bild5.jpeg" alt="alternatetext">
+      </div>
+
+      <div id="images">
+        <img src="Images/bild1.jpeg" alt="alternatetext">
+
+        <img src="Images/bild2.jpeg" alt="alternatetext">
+      </div>
+
+      <div id="images">
+        <img src="Images/bild3.jpeg" alt="alternatetext">
+
+        <img src="Images/bild4.jpeg" alt="alternatetext">
+      </div>
+    </div>
+
+    <video controls>
+      <source src="Video/video.mp4" type="video/mp4">
+    </video>
   </main>
+
+  <!-- Ram runt sidan-->
+  <div id="ram"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/pixi.js@8.6.6/dist/pixi.min.js"></script> <!--Länkar till Pixi Javascript-->
   <script type="module" src="main.js"></script> <!--Länkar till Javascript-->
